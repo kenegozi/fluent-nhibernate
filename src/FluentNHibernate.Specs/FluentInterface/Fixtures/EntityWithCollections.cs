@@ -8,7 +8,7 @@ namespace FluentNHibernate.Specs.FluentInterface.Fixtures
     {
         public EntityCollectionChild[] ArrayOfChildren { get; set; }
         public IList<EntityCollectionChild> BagOfChildren { get; set; }
-        public ISet<EntityCollectionChild> SetOfChildren { get; set; }
+        public Iesi.Collections.Generic.ISet<EntityCollectionChild> SetOfChildren { get; set; }
 
         public IList<string> BagOfStrings { get; set; }
     }

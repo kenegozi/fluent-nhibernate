@@ -21,7 +21,7 @@ namespace FluentNHibernate.Testing.DomainModel.Mapping
 
     public class ManyToManyTarget : Entity
     {
-        public virtual ISet<ChildObject> SetOfChildren { get; set; }
+        public virtual Iesi.Collections.Generic.ISet<ChildObject> SetOfChildren { get; set; }
         public virtual IList<ChildObject> BagOfChildren { get; set; }
         public virtual IList<ChildObject> ListOfChildren { get; set; }
         public virtual IDictionary<string, ChildObject> MapOfChildren { get; set; }

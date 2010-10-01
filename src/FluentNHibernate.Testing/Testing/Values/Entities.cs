@@ -29,7 +29,7 @@ namespace FluentNHibernate.Testing.Testing.Values
             get { return backingField; }
         }
 
-        public ISet<string> TypedSet { get; set; }
+        public Iesi.Collections.Generic.ISet<string> TypedSet { get; set; }
         public ISet Set { get; set; }
         public ICollection Collection { get; set; }
         public string[] Array { get; set; }

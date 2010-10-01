@@ -7,7 +7,7 @@ namespace FluentNHibernate.Testing.DomainModel
     public class Artist : Entity
     {
         public virtual string Name { get; set; }
-        public virtual ISet<Album> Albums { get; set; }
+        public virtual Iesi.Collections.Generic.ISet<Album> Albums { get; set; }
         public virtual Genre Genre { get; set; }
 
         public Artist()
@@ -38,8 +38,8 @@ namespace FluentNHibernate.Testing.DomainModel
         public int ID { get; set; }
         public string Title { get; set;}
         public Artist Artist { get; set; }
-        public ISet<Track> Tracks { get; set; }
-        public ISet<Tag> Tags { get; set; }
+        public Iesi.Collections.Generic.ISet<Track> Tracks { get; set; }
+        public Iesi.Collections.Generic.ISet<Tag> Tags { get; set; }
 
         public Album()
         {

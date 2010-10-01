@@ -31,7 +31,7 @@ namespace FluentNHibernate.Testing.DomainModel.Mapping
 
     public class OneToManyTarget : Entity
     {
-        public virtual ISet<ChildObject> SetOfChildren { get; set; }
+        public virtual Iesi.Collections.Generic.ISet<ChildObject> SetOfChildren { get; set; }
         public virtual HashSet<ChildObject> HashSetOfChildren { get; set; }
         public virtual IList<ChildObject> BagOfChildren { get; set; }
         public virtual IList<ChildObject> ListOfChildren { get; set; }
@@ -73,7 +73,7 @@ namespace FluentNHibernate.Testing.DomainModel.Mapping
 
     public class OneToManyComponentTarget
     {
-        public virtual ISet<ComponentOfMappedObject> SetOfComponents { get; set; }
+        public virtual Iesi.Collections.Generic.ISet<ComponentOfMappedObject> SetOfComponents { get; set; }
         public virtual ComponentOfMappedObject Component { get; set; }
     }
 

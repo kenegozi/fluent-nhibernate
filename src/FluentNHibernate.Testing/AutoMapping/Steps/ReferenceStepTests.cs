@@ -59,7 +59,7 @@ namespace FluentNHibernate.Testing.AutoMapping.Steps
 
         protected class PropertyTarget
         {
-            public ISet<PropertyTarget> Set { get; set; }
+            public Iesi.Collections.Generic.ISet<PropertyTarget> Set { get; set; }
             public IList<PropertyTarget> List { get; set; }
             public int Int { get; set; }
             public string String { get; set; }
